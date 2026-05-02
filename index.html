@@ -13,7 +13,7 @@
     <title>Web Developer Portfolio</title>
   </head>
   <body class="open-sans-normal-400">
-    <header class="header">
+    <header class="header secondary-background">
       <nav>
         <div>
           <h1 class="nav-title">John <span class="text-primary">Doe</span></h1>
@@ -34,7 +34,8 @@
           <h1 class="banner-title">John Doe</h1>
           <p class="banner-description">
             I specialize in creating responsive and user-friendly websites that
-            help businesses establish a strong online presence. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, pariatur?
+            help businesses establish a strong online presence. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Nulla, pariatur?
           </p>
           <button class="btn-primary">Download CV</button>
           <button class="btn-primary">Contact</button>
@@ -43,24 +44,33 @@
       </div>
     </header>
     <main>
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>
+      <section class="about secondary-background">
+        <h3 class="section-title">About Me</h3>
+        <p class="section-description">
           I am a passionate web developer with experience in creating responsive
-          and user-friendly websites.
+          and user-friendly websites. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Dolores quo nostrum necessitatibus corporis fugiat
+          suscipit eum rem nam ullam veniam.
         </p>
-      </section>
-      <section id="blogs">
-        <h2>Blogs</h2>
-        <ul>
-          <li>Blog Post 1</li>
-          <li>Blog Post 2</li>
-          <li>Blog Post 3</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Interested in working together? Feel free to reach out!</p>
+        <div class="about-items">
+          <!-- .about-item*4>p.item-title+p.item-description -->
+          <div class="about-item">
+            <p class="item-title">Name</p>
+            <p class="item-description">John doe</p>
+          </div>
+          <div class="about-item">
+            <p class="item-title">Email</p>
+            <p class="item-description">john.doe@example.com</p>
+          </div>
+          <div class="about-item">
+            <p class="item-title">Date of Birth</p>
+            <p class="item-description">January 1, 1990</p>
+          </div>
+          <div class="about-item">
+            <p class="item-title">From</p>
+            <p class="item-description">New York, USA</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
