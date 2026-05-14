@@ -176,3 +176,109 @@ footer textarea {
   font-size: 18px;
   margin-bottom: 24px;
 }
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
+/* For Tablet and Mobile (Screens smaller than 1024px) */
+@media screen and (max-width: 1024px) {
+  nav {
+    margin: 0 40px; /* Reduces that massive 200px margin */
+  }
+  .header {
+    background-image: none;
+  }
+
+  .banner {
+    margin: 0 40px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-profile-pic {
+    width: 100%; /* Makes the image scale down */
+    max-width: 400px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about {
+    padding: 60px 40px; /* Shrinks the massive 130px padding */
+  }
+
+  footer {
+    padding: 80px 40px;
+    gap: 50px;
+  }
+}
+
+/* For Mobile Phones (Screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  /* Banner Text Scaling */
+  .banner-title {
+    font-size: 50px; /* Prevents text from overflowing the screen */
+  }
+
+  .banner-greetings {
+    font-size: 30px;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column; /* Stacks buttons on top of each other */
+    align-items: center; /* Centers them */
+    gap: 15px; /* Creates the vertical gap */
+  }
+
+  /* Section Layouts: Stacking Columns */
+  .about-items,
+  .skills-items,
+  .resume-container,
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    box-sizing: border-box; /* 👈 this is the key fix */
+    width: 100%;
+    padding: 10px 20px; /* keep as is */
+  }
+
+  .footer-column {
+    width: 100%; /* Makes form and text full width */
+  }
+
+  .about-item {
+    margin-bottom: 30px;
+  }
+
+  /* Main container fix */
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  main section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
